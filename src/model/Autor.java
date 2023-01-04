@@ -29,4 +29,10 @@ public class Autor {
     public Autor(Collection<Obras> obras){
         this.obras = new HashSet<>();
     }
+    public void addObras(Obras obra){
+        this.obras.add(obra);
+    }
+    public Collection<Obras> getObras() {
+        return obras;
+    }
 }

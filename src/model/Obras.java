@@ -1,5 +1,6 @@
 package model;
 
+import java.io.ObjectInputStream;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
@@ -19,5 +20,11 @@ public class Obras {
         this.dataExposicao = dataExposicao;
         this.autor = new HashSet<>();
     }
+    public void addAutor(Autor autor){
+        this.autor.add(autor);
+    }
 
+    public Collection<Autor> getAutor() {
+        return autor;
+    }
 }
