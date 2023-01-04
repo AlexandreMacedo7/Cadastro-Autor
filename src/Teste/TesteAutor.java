@@ -19,6 +19,9 @@ public class TesteAutor {
         autor.add(new Autor("Bruna Heloisa", ESexo.FEMININO,"heloisa.gmail.com",
                 LocalDate.of(2004, Calendar.JULY,17),"Brasil", "999.999.999-55"));
 
+        autor.add(new Autor("Cristiano Macedo", ESexo.MASCULINO,"cristiano.gmail.com",
+                LocalDate.of(2009, Calendar.AUGUST,28),"Brasil", "777.777.777-65"));
+
 
         autor.forEach(autores -> System.out.println(autores + "\n"));
 
