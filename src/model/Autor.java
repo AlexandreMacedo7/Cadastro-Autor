@@ -3,6 +3,7 @@ package model;
 import model.eSexo.ESexo;
 
 
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
@@ -13,12 +14,12 @@ public class Autor {
     private String nome;
     private ESexo sexo;
     private String email;
-    private Date data;
+    private LocalDate data;
     private String pais;
     private String cpf;
     private Collection<Obras> obras;
 
-    public Autor(String nome, ESexo sexo, String email, Date data, String pais, String cpf) {
+    public Autor(String nome, ESexo sexo, String email, LocalDate data, String pais, String cpf) {
         this.nome = nome;
         this.sexo = sexo;
         this.email = email;
@@ -34,5 +35,15 @@ public class Autor {
     }
     public Collection<Obras> getObras() {
         return obras;
+    }
+
+    @Override
+    public String toString() {
+        return "Autor(a): " + nome +
+                "\nSexo: " + sexo +
+                "\nEmail: " + email +
+                "\nNascimento: " + data +
+                "\nPais: " + pais +
+                "\nCPF: " + cpf;
     }
 }

@@ -1,6 +1,6 @@
 package model;
 
-import java.io.ObjectInputStream;
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
@@ -9,11 +9,11 @@ public class Obras {
 
     private String nome;
     private String descricao;
-    private Date dataPublicacao;
-    private Date dataExposicao;
+    private LocalDate dataPublicacao;
+    private LocalDate dataExposicao;
     private Collection<Autor> autor;
 
-    public Obras(String nome, String descricao, Date dataPublicacao, Date dataExposicao, Collection<Autor> autor) {
+    public Obras(String nome, String descricao, LocalDate dataPublicacao, LocalDate dataExposicao, Collection<Autor> autor) {
         this.nome = nome;
         this.descricao = descricao;
         this.dataPublicacao = dataPublicacao;
